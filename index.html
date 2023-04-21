@@ -8,12 +8,21 @@
 </head>
 <body>
      <div id="app">
-
+        
+        <h1>Lista Email</h1>
+        <div class=""  v-if="(arrayEmail.length == 10)">
+            <ul>
+                <li v-for="email in arrayEmail">{{ email }}</li>
+            </ul>
+            
+        </div>
+        <button @click="attivaApi">clicca</button>
+          
      </div>
 
 
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js)"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://unpkg.com/vue@3"></script>
     <script src="assets/js/main.js"></script>
 </body>
